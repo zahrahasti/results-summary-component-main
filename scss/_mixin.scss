@@ -1,0 +1,11 @@
+@mixin flex(){
+    display: flex;
+    align-items: center;
+  }
+   
+  @mixin textHead($color,$size){
+    color:$color;
+    font-size:$size;
+    text-transform: capitalize;
+  
+  }

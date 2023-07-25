@@ -1,0 +1,110 @@
+$spaces:(1,2,3,4,5,6,7,8);
+$colors:($light-red,$orangy,$green,$cobalt-blue);
+@each $space in $spaces{
+
+    .p-#{$space}{
+        padding:#{$space / 2}rem;
+        // padd3{ing: calc();
+    }
+    .px-#{$space}{
+        padding-inline:#{$space / 2}rem;;
+    }
+    .py-#{$space}{
+        padding-block:#{$space / 2}rem;
+    }
+    .m-#{$space}{
+        margin:#{$space /2}rem;
+        // padding: calc();
+    }
+    .mx-#{$space}{
+        margin-inline:#{$space /2 }rem;;
+    }
+    .my-#{$space}{
+        margin-block:#{$space /2 }rem;
+    }
+    .rounded-#{$space}{
+     border-radius:#{$space /2 }rem;
+    }
+    .rounded-b-#{$space}{
+        border-bottom-left-radius:#{$space /2}rem;
+        border-bottom-right-radius:#{$space /2 }rem;
+    }
+    .gap-#{$space}{
+        gap:#{$space /2}rem;
+    }
+    .col-gap-#{$space}{
+    column-gap:#{$space}rem;
+    }
+}
+.flex{
+    display: flex;
+}
+.li-1{
+    color:$light-red;
+    background:lighten($light-red,30%);
+}
+.li-2{
+    color:$orangy;
+    background:lighten($orangy,40%);
+}
+.li-3{
+    color:$green;
+    background:lighten($green,60%);
+}
+.li-4{
+    color:$cobalt-blue;
+    background:lighten($cobalt-blue,50%);
+}
+
+.font-sm{
+    font-weight:500;
+    font-size:1.4rem;
+}
+.font-md{
+    font-weight:700;
+    font-size:1.85rem;
+}
+.font-lg{
+    font-size:2.3rem;
+}
+.light-gray{
+    color:$pale;
+}
+
+.mid-gray{
+    color:$light-lavender;
+    
+}
+.dark-blue{
+    color:$dark-blue;
+}
+.dark-gray{
+    color:lighten($dark-blue,40%);
+}
+ .text-white{
+    color:$white;
+ }
+ .text-left{
+    width: 100%;
+    text-align:left;
+}
+
+.huge{
+    @include textHead( white,5rem);
+    font-weight: 600;
+ }
+ .block{
+     display: block;
+ }
+ .tiny{
+     @include textHead($light-lavender,1.2rem);
+     // font-size:1.2rem;
+ }
+ .bold{
+     font-weight:800;
+ }
+
+ 
+.text-center{
+    text-align:center;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "description": "![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass.scss style.css --watch"
+  },
+  "author": "zahra NM",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.64.1"
+  },
+  "keywords": []
+}

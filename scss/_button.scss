@@ -1,0 +1,19 @@
+.btn{
+    width: 100%;
+    color:$white;
+    border-radius:4rem;
+    background:$dark-blue;
+    padding:1.5rem 2rem;
+    cursor: pointer;
+    transition: background .4s;
+    &:hover{
+        background:$gradient-blue;
+    }
+    &:active{
+        background:$gradient-blue;
+        transform:scale(.98);
+    }
+}
+
+
+
